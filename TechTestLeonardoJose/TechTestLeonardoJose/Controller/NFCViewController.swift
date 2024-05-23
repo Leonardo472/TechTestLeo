@@ -8,27 +8,30 @@
 import UIKit
 import CoreNFC
 
-class NFCViewController: UIViewController, NFCNDEFReaderSessionDelegate {
+class NFCViewController: UIViewController {
 
     @IBOutlet var NFCText: UITextView!
+    
+    var nfcSession: NFCNDEFReaderSession?
+    var word = "None"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
-    var nfcSession: NFCNDEFReaderSession?
-    var word = "None"
-    
     @IBAction func ScanBtn(_ sender: Any) {
+        startNFCSession()
+    }
+    
+    func startNFCSession() {
         nfcSession = NFCNDEFReaderSession(delegate: self, queue: nil, invalidateAfterFirstRead: true)
         nfcSession?.begin()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
+}
+
+extension NFCViewController: NFCNDEFReaderSessionDelegate {
     func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
         print("The Session Was Invalidated: \(error.localizedDescription)")
     }
@@ -42,5 +45,4 @@ class NFCViewController: UIViewController, NFCNDEFReaderSessionDelegate {
             self.NFCText.text = result
         }
     }
-    
 }

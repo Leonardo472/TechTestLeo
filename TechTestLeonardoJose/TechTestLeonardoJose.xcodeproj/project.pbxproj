@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6DB80992E6789EF8300F59A /* Pods_TechTestLeonardoJose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B880A87C5ADB9A1B7631AE /* Pods_TechTestLeonardoJose.framework */; };
 		A72BD7ED2BFDE38A00441D3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72BD7EC2BFDE38A00441D3D /* AppDelegate.swift */; };
 		A72BD7F12BFDE38A00441D3D /* CRUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72BD7F02BFDE38A00441D3D /* CRUDViewController.swift */; };
 		A72BD7F42BFDE38A00441D3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72BD7F22BFDE38A00441D3D /* Main.storyboard */; };
@@ -16,12 +17,12 @@
 		A7610E612BFDF0070076506E /* NFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7610E602BFDF0070076506E /* NFCViewController.swift */; };
 		A7610EA32BFF32A20076506E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7610EA22BFF32A20076506E /* Model.swift */; };
 		A79CDF3F2BFF7A0D00F58550 /* ImgurAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CDF3E2BFF7A0D00F58550 /* ImgurAPI.swift */; };
-		B3B7AFEF678B3E89DAD202B7 /* Pods_TechTestLeonardoJose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4989E895B7AD2E5E76E48A8 /* Pods_TechTestLeonardoJose.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		087D93101B6773B0D288544B /* Pods-TechTestLeonardoJose.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechTestLeonardoJose.debug.xcconfig"; path = "Target Support Files/Pods-TechTestLeonardoJose/Pods-TechTestLeonardoJose.debug.xcconfig"; sourceTree = "<group>"; };
-		A4989E895B7AD2E5E76E48A8 /* Pods_TechTestLeonardoJose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechTestLeonardoJose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CFC5530F93AD27E0DEC183E /* Pods-TechTestLeonardoJose.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechTestLeonardoJose.release.xcconfig"; path = "Target Support Files/Pods-TechTestLeonardoJose/Pods-TechTestLeonardoJose.release.xcconfig"; sourceTree = "<group>"; };
+		86682DFF204217998D415292 /* Pods-TechTestLeonardoJose.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechTestLeonardoJose.debug.xcconfig"; path = "Target Support Files/Pods-TechTestLeonardoJose/Pods-TechTestLeonardoJose.debug.xcconfig"; sourceTree = "<group>"; };
+		A6B880A87C5ADB9A1B7631AE /* Pods_TechTestLeonardoJose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechTestLeonardoJose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72BD7E92BFDE38A00441D3D /* TechTestLeonardoJose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechTestLeonardoJose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72BD7EC2BFDE38A00441D3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A72BD7F02BFDE38A00441D3D /* CRUDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDViewController.swift; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		A7610E602BFDF0070076506E /* NFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCViewController.swift; sourceTree = "<group>"; };
 		A7610EA22BFF32A20076506E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A79CDF3E2BFF7A0D00F58550 /* ImgurAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurAPI.swift; sourceTree = "<group>"; };
-		C93801D0E16507287BCDFC43 /* Pods-TechTestLeonardoJose.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechTestLeonardoJose.release.xcconfig"; path = "Target Support Files/Pods-TechTestLeonardoJose/Pods-TechTestLeonardoJose.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3B7AFEF678B3E89DAD202B7 /* Pods_TechTestLeonardoJose.framework in Frameworks */,
+				A6DB80992E6789EF8300F59A /* Pods_TechTestLeonardoJose.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +51,18 @@
 		38A8E81B0EC63FA7FA65AAA4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				087D93101B6773B0D288544B /* Pods-TechTestLeonardoJose.debug.xcconfig */,
-				C93801D0E16507287BCDFC43 /* Pods-TechTestLeonardoJose.release.xcconfig */,
+				86682DFF204217998D415292 /* Pods-TechTestLeonardoJose.debug.xcconfig */,
+				4CFC5530F93AD27E0DEC183E /* Pods-TechTestLeonardoJose.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A412C93AF61F913F374454FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6B880A87C5ADB9A1B7631AE /* Pods_TechTestLeonardoJose.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A72BD7E02BFDE38A00441D3D = {
@@ -63,7 +71,7 @@
 				A72BD7EB2BFDE38A00441D3D /* TechTestLeonardoJose */,
 				A72BD7EA2BFDE38A00441D3D /* Products */,
 				38A8E81B0EC63FA7FA65AAA4 /* Pods */,
-				C6E00E52937D58845BED7F5A /* Frameworks */,
+				A412C93AF61F913F374454FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,14 +140,6 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		C6E00E52937D58845BED7F5A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A4989E895B7AD2E5E76E48A8 /* Pods_TechTestLeonardoJose.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,11 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A72BD7FD2BFDE38B00441D3D /* Build configuration list for PBXNativeTarget "TechTestLeonardoJose" */;
 			buildPhases = (
-				34D14B90F75BBFBBC19D0BDC /* [CP] Check Pods Manifest.lock */,
+				193F94DA695BC620B6A6307E /* [CP] Check Pods Manifest.lock */,
 				A72BD7E52BFDE38A00441D3D /* Sources */,
 				A72BD7E62BFDE38A00441D3D /* Frameworks */,
 				A72BD7E72BFDE38A00441D3D /* Resources */,
-				04F701FD2DDFA1379CD449AD /* [CP] Embed Pods Frameworks */,
+				1211BFCB522058DC00FE726F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,7 +209,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04F701FD2DDFA1379CD449AD /* [CP] Embed Pods Frameworks */ = {
+		1211BFCB522058DC00FE726F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -226,7 +226,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechTestLeonardoJose/Pods-TechTestLeonardoJose-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		34D14B90F75BBFBBC19D0BDC /* [CP] Check Pods Manifest.lock */ = {
+		193F94DA695BC620B6A6307E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -407,7 +407,7 @@
 		};
 		A72BD7FE2BFDE38B00441D3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 087D93101B6773B0D288544B /* Pods-TechTestLeonardoJose.debug.xcconfig */;
+			baseConfigurationReference = 86682DFF204217998D415292 /* Pods-TechTestLeonardoJose.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -437,7 +437,7 @@
 		};
 		A72BD7FF2BFDE38B00441D3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C93801D0E16507287BCDFC43 /* Pods-TechTestLeonardoJose.release.xcconfig */;
+			baseConfigurationReference = 4CFC5530F93AD27E0DEC183E /* Pods-TechTestLeonardoJose.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

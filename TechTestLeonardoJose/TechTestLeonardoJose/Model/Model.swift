@@ -7,19 +7,6 @@
 
 import Foundation
 
-struct ImgurResponse: Codable {
-    let data: ImgurImageData
-    let success: Bool
-    let status: Int
-}
-
-struct ImgurImageData: Codable {
-    let id: String
-    let title: String?
-    let description: String?
-    let link: String
-}
-
 struct ImgurImage: Codable {
     let id: String
     let title: String?

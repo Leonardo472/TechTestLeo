@@ -49,26 +49,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func scheduleNotification() {
-            let identifier = "Notification"
-            let title = "Thankyou!"
-            let body = "Thankyou for using this app!"
-            
-            let content = UNMutableNotificationContent()
-            content.title = title
-            content.body = body
-            content.sound = .default
-            
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 2, repeats: false)
-            let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
-            
-            UNUserNotificationCenter.current().add(request) { error in
-                if let error = error {
-                    print("Error scheduling notification: \(error)")
-                } else {
-                    print("Notification scheduled successfully")
-                }
+        let identifier = "Notification"
+        let title = "Thankyou!"
+        let body = "Thankyou for using this app!"
+        
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = .default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 2, repeats: false)
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Error scheduling notification: \(error)")
+            } else {
+                print("Notification scheduled successfully")
             }
         }
+    }
     
 }
 
