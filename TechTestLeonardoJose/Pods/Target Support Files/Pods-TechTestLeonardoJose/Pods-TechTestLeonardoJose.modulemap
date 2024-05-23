@@ -1,0 +1,6 @@
+framework module Pods_TechTestLeonardoJose {
+  umbrella header "Pods-TechTestLeonardoJose-umbrella.h"
+
+  export *
+  module * { export * }
+}

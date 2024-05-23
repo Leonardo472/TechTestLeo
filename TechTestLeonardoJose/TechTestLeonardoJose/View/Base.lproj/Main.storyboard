@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fg6-Rt-mih">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home (CRUD)-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CRUDViewController" customModule="TechTestLeonardoJose" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home (CRUD)" id="6oP-KX-RrR">
+                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-793.12977099236639" y="739.43661971830988"/>
+        </scene>
+        <!--QR Reader-->
+        <scene sceneID="s1S-kw-qZp">
+            <objects>
+                <viewController id="F15-iq-tmK" customClass="QRReaderViewController" customModule="TechTestLeonardoJose" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CuR-UE-74y">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tap-Q3-5Ar">
+                                <rect key="frame" x="107" y="409" width="178" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Scan Here!"/>
+                                <connections>
+                                    <action selector="StartScanning:" destination="F15-iq-tmK" eventType="touchUpInside" id="Pek-M6-wGu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LZP-Nr-GXu"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LZP-Nr-GXu" firstAttribute="bottom" secondItem="tap-Q3-5Ar" secondAttribute="bottom" constant="325" id="2Ym-pW-OXr"/>
+                            <constraint firstItem="tap-Q3-5Ar" firstAttribute="leading" secondItem="LZP-Nr-GXu" secondAttribute="leading" constant="107" id="OHE-tf-F3e"/>
+                            <constraint firstItem="tap-Q3-5Ar" firstAttribute="top" secondItem="LZP-Nr-GXu" secondAttribute="top" constant="350" id="SC8-Sb-ru9"/>
+                            <constraint firstItem="LZP-Nr-GXu" firstAttribute="trailing" secondItem="tap-Q3-5Ar" secondAttribute="trailing" constant="108" id="qKU-IJ-7sC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="QR Reader" image="qrcode" catalog="system" id="ye3-8D-PPc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLp-r9-KGr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="738.73239436619724"/>
+        </scene>
+        <!--NFC-->
+        <scene sceneID="UOU-jN-c5Y">
+            <objects>
+                <viewController id="KSs-54-r38" customClass="NFCViewController" customModule="TechTestLeonardoJose" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hHn-rO-qFy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TEXT" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S9b-kR-sAU">
+                                <rect key="frame" x="76" y="186" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckx-sO-Rof">
+                                <rect key="frame" x="121" y="617" width="150" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Read NFC"/>
+                                <connections>
+                                    <action selector="ScanBtn:" destination="KSs-54-r38" eventType="touchUpInside" id="22g-HM-fMm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y0i-vP-S3I"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ckx-sO-Rof" firstAttribute="top" secondItem="S9b-kR-sAU" secondAttribute="bottom" constant="303" id="DWX-iB-tve"/>
+                            <constraint firstItem="Y0i-vP-S3I" firstAttribute="trailing" secondItem="S9b-kR-sAU" secondAttribute="trailing" constant="77" id="IKi-W7-9ex"/>
+                            <constraint firstItem="Y0i-vP-S3I" firstAttribute="bottom" secondItem="ckx-sO-Rof" secondAttribute="bottom" constant="117" id="Sce-JD-iv4"/>
+                            <constraint firstItem="ckx-sO-Rof" firstAttribute="leading" secondItem="Y0i-vP-S3I" secondAttribute="leading" constant="121" id="VrS-Rc-oZh"/>
+                            <constraint firstItem="Y0i-vP-S3I" firstAttribute="trailing" secondItem="ckx-sO-Rof" secondAttribute="trailing" constant="122" id="eHu-Hc-0Zo"/>
+                            <constraint firstItem="S9b-kR-sAU" firstAttribute="top" secondItem="Y0i-vP-S3I" secondAttribute="top" constant="127" id="pk7-7a-Fuz"/>
+                            <constraint firstItem="S9b-kR-sAU" firstAttribute="leading" secondItem="Y0i-vP-S3I" secondAttribute="leading" constant="76" id="s6v-Ou-O1B"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="NFC" image="wifi.circle.fill" catalog="system" id="dCP-gB-nbG"/>
+                    <connections>
+                        <outlet property="NFCText" destination="S9b-kR-sAU" id="PYd-eD-Hdb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZF-pc-xTo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="739"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ahd-52-Xpk">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fg6-Rt-mih" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nXX-Hs-gFG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="qyl-lZ-8E4"/>
+                        <segue destination="F15-iq-tmK" kind="relationship" relationship="viewControllers" id="SNf-bu-RRG"/>
+                        <segue destination="KSs-54-r38" kind="relationship" relationship="viewControllers" id="9Qu-vm-7Bn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZiC-Qg-vGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="qrcode" catalog="system" width="128" height="114"/>
+        <image name="wifi.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
